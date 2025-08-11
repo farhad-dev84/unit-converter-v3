@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter V3</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-light">
+  
+  <div class="container py-5">
+    <h2 id="heading" class="mb-4 text-center">🔄 Unit Converter V3</h2>
+    
+    <div class="card shadow-lg p-4 ">
+      
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="#category" class="form-label">Select Category</label>
+          <select id="category" class="form-select">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+            <option value="time">Time</option>
+          </select>
+        </div>
+        
+        <div class="col-md-3">
+          <label for="#fromUnit" class="form-label">From</label>
+          <select id="fromUnit" class="form-select"></select>
+        </div>
+        
+        <div class="col-md-3">
+          <label for="#toUnit" class="form-label">To</label>
+          <select id="toUnit" class="form-select"></select>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="#inputValue" class="form-label">Enter Value</label>
+          <input type="number" id="inputValue" class="form-control" placeholder="Enter Number">
+        </div>
+        
+        <div class="col-md-6 d-flex justify-content-between align-items-end">
+          <button id="convertBtn" class="btn btn-primary w-50 me-2">Convert</button>
+          <button id="resetBtn" class="btn btn-outline-danger w-50">Reset</button>
+        </div>
+        
+        <div class="col-12">
+          <div id="result" class="alert alert-info d-none"></div>
+        </div>
+        
+        <div class="form-check form-switch">
+          <input type="checkbox" id="themeSwitch" role="switch" class="form-check-input">
+          <label for="#themeSwitch" class="form-check-label">Dark Mode</label>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS & Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
+  
